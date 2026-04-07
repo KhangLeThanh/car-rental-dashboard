@@ -50,7 +50,7 @@ export function ProviderBarChart({ rentals }: Props) {
           <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
           <XAxis dataKey="provider" tick={{ fontSize: 12 }} />
           <YAxis tickFormatter={(v) => `€${v}`} tick={{ fontSize: 12 }} />
-          <Tooltip formatter={(v: number) => [`€${v}`, ""]} />
+          <Tooltip formatter={(v) => [`€${v}`, ""]} />
           <Legend />
           {CAR_TYPES.map((type, i) => (
             <Bar

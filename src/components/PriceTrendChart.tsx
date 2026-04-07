@@ -59,8 +59,7 @@ export function PriceTrendChart({ data, carType }: Props) {
               tick={{ fontSize: 12 }}
               domain={["auto", "auto"]}
             />
-            <Tooltip formatter={(v: number) => [`€${v}`, ""]} />
-            <Legend />
+            <Tooltip formatter={(v) => [`€${v}`, ""]} /> <Legend />
             {Object.entries(PROVIDER_COLORS).map(([provider, color]) => (
               <Line
                 key={provider}
